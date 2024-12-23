@@ -1,0 +1,87 @@
+*, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #007BFF;
+    padding: 1px;
+
+}
+.menu {
+   backdrop-filter: blur(30px);
+   text-decoration: none;
+   color: black;
+   padding: 5px;
+   transition: background-color belue 1s;
+}
+.navbar_ui {
+    position: sticky;
+    top: 0;
+}
+.menu:hover {
+    background-color: rgb(138, 171, 201);
+    border-radius: 8px;
+    transition: backgroun-color0.3s;
+
+}
+
+.navbar1 {
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+}
+.cari {
+    border-radius: 8px;
+}
+
+.nav_down {
+    display: flex;
+    justify-content:space-between;
+background-color: rgb(0, 110, 255);
+padding: 2px;
+align-items: center;
+}
+
+
+.rizal {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+.pilihan {
+    display: flex;
+    justify-content: space-around;
+}
+.datapokok {
+    
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 9px 9px 10px rgb(75, 70, 70);
+    text-decoration: none;
+    transition: background-color belue 1s
+}
+.datapokok :hover {
+    background-color: aliceblue;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 9px 9px 0px white;
+}
+@media screen and (max-width: 600px) {
+    .datapokok {
+       
+        
+        height: 150px;
+        width: 150px;
+        
+
+    }
+    
+}
