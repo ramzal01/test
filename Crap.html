@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>HACKED</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Courier New", monospace;
+}
+
+body{
+    background:#000;
+    color:#0f0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    text-align:center;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn{
+    from{opacity:0}
+    to{opacity:1}
+}
+
+h1{
+    font-size:28px;
+    letter-spacing:3px;
+    margin-bottom:15px;
+    color:#ff0000;
+}
+
+.profile{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    border:2px solid #ff0000;
+    margin:15px 0;
+}
+
+.name{
+    font-size:20px;
+    color:#ff0000;
+    animation: blink 1s infinite;
+    margin-bottom:15px;
+}
+
+@keyframes blink{
+    0%,100%{opacity:1}
+    50%{opacity:0}
+}
+
+p{
+    font-size:14px;
+    line-height:1.6;
+    margin-bottom:20px;
+    color:#0f0;
+}
+
+.music-btn{
+    cursor:pointer;
+    color:#0f0;
+    border:1px solid #0f0;
+    padding:8px 14px;
+    display:inline-block;
+    font-size:13px;
+}
+
+.music-btn:hover{
+    background:#0f0;
+    color:#000;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>[ BURONAN ]</h1>
+
+    <img src="foto.jpg" class="profile">
+
+    <div class="name">CRAP</div>
+
+    <p>
+        BURONAN TNI AMRIK<br>
+        TARGET STATUS : WANTED<br>
+        IF YOU KNOW HIS LOCATION<br>
+        REPORT IMMEDIATELY
+    </p>
+
+    <div class="music-btn" onclick="toggleMusic()">PLAY MUSIC</div>
+</div>
+
+<audio id="music" loop>
+    <source src="AUD-20251227-WA0051.m4a" type="audio/mpeg">
+</audio>
+
+<script>
+const music = document.getElementById("music");
+function toggleMusic(){
+    if(music.paused){
+        music.play();
+    }else{
+        music.pause();
+    }
+}
+</script>
+
+</body>
+</html>
